@@ -1,7 +1,7 @@
 const passport = require("passport");
 
 // authRoutes is required in index.js, the express app gets passed in as a parameter and the below arrow function
-// is invoked.
+// is invoked using the app defined in index.js
 module.exports = app => {
   // GET method which kicks us into the Google OAuth flow, asks Google for profile info and email address.
   app.get(
