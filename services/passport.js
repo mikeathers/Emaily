@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 // new instances can be made from this and then saved to the DB.
 const User = mongoose.model("users");
 
+// Encodes mongo user id inside the cookie
 passport.serializeUser((user, done) => {
   done(null, user.id);
 });
