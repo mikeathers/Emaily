@@ -27,7 +27,8 @@ passport.use(
     {
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
-      callbackURL: "/auth/google/callback"
+      callbackURL: "/auth/google/callback",
+      proxy: true
     },
     // accessToken, refreshToken, and profile is data provided by the callback from google.
     // done is provided which lets us break out this callback and the google oauth strategy.
